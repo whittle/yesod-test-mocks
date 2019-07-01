@@ -1,5 +1,5 @@
 name:                yesod-test-mocks
-version:             0.1.0.0
+version:             1.6.6.1.1
 github:              "whittle/yesod-test-mocks"
 license:             BSD3
 author:              "Jason Whittle"
@@ -21,24 +21,33 @@ description:         Please see the README on GitHub at <https://github.com/whit
 
 dependencies:
 - base >= 4.7 && < 5
+- blaze-builder
+- bytestring
+- case-insensitive
+- conduit
+- containers
+- cookie
+- hspec-core
+- html-conduit
+- http-types
+- HUnit
+- network
+- pretty-show
+- text
+- time
+- transformers
+- wai
+- wai-extra
+- xml-conduit
+- yesod-core
+- yesod-test
 
 library:
   source-dirs: src
 
-executables:
-  yesod-test-mocks-exe:
-    main:                Main.hs
-    source-dirs:         app
-    ghc-options:
-    - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
-    dependencies:
-    - yesod-test-mocks
-
 tests:
   yesod-test-mocks-test:
-    main:                Spec.hs
+    main:                main.hs
     source-dirs:         test
     ghc-options:
     - -threaded
@@ -46,3 +55,7 @@ tests:
     - -with-rtsopts=-N
     dependencies:
     - yesod-test-mocks
+    - hspec
+    - unliftio
+    - yesod-core
+    - yesod-form
