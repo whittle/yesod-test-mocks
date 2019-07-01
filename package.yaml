@@ -1,7 +1,7 @@
 name:                yesod-test-mocks
 version:             1.6.6.1.1
 github:              "whittle/yesod-test-mocks"
-license:             BSD3
+license:             MIT
 author:              "Jason Whittle"
 maintainer:          "jason.whittle@gmail.com"
 copyright:           "(c) 2019 Jason A. Whittle"
