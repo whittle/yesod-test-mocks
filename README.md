@@ -1,5 +1,8 @@
 # yesod-test-mocks
+Yesod.Test.Mocks provides a nearly drop-in replacement for Yesod.Test
+that enables adding mocks to examples.
 
+## How to use
 1. Modify your app so that any behaviors you want to mock will be
    accessed through actions that are part of the Application type.
 2. Create a data type to hold your mocks for each spec.
@@ -15,3 +18,6 @@
 7. In your specs, set any mocks necessary before making requests.
 8. (Optional) In your spec tear-down, check to make sure that your
    mocks were consumed.
+
+## Todo:
+1. Add tests that actually exercise the mock functions.
